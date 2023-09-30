@@ -1,0 +1,15 @@
+.hidden-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 24px;
+    color: white;
+    opacity: 1; /* Membuat teks tidak terlihat */
+}
+
+.draggable-box {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.3); /* Kotak transparan */
+}

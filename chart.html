@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="lineChart" width="600" height="400" style="height: 400px; width: 600px;"></canvas>
+</body>
+<script>
+    var data = {
+    labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May'],
+    datasets: [{
+        label: 'Sample Data',
+        data: [50, 75, 60, 85, 70],
+        borderColor: 'rgba(75, 192, 192, 1)', // Warna garis
+        borderWidth: 2, // Ketebalan garis
+        fill: false // Tanpa mengisi area di bawah garis
+    }]
+};
+var ctx = document.getElementById('lineChart').getContext('2d');
+var chart = new Chart(ctx, {
+    type: 'line',
+    data: data,
+    options: {
+        scales: {
+            x: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Tanggal' // Label sumbu horizontal
+                }
+            },
+            y: {
+                display: true,
+                title: {
+                    display: true,
+                    text: 'Jumlah' // Label sumbu vertikal
+                }
+            }
+        }
+    }
+});
+</script>
+</html>

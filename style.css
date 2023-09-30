@@ -1,0 +1,254 @@
+body{
+    background: var(--grey-1);
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --white: #ffffff;
+    --grey-2: #E5E9F2;
+    --grey-1: #F5F8FD;
+    --purple-1: #9897F4;
+    --purple-2: #5352ED;
+    --purple-3: #32318E;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+}
+
+.navbar-brand{
+    color: #32318E;
+    font-weight: var(--fw-extrabold);
+    font-size: 28px;
+    margin-left: 30px;
+}
+
+.navbar{
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    height: 100px;
+    background: var(--white);
+}
+
+.navbar-font{
+    font-weight: var(--fw-regular);
+    font-size: 20px;
+}
+
+.btn-primary{
+    background: var(--purple-3);
+    border: 0;
+    border-radius: 50px;
+    padding: 7px 24px 7px 24px;
+}
+
+.btn-primary:hover {
+    background-color: var(--purple-2) !important; 
+}
+
+.mx-50{
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.mb-100{
+    margin-bottom: 70px;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.mt-70{
+    margin-top: 70px;
+}
+
+.mt-30{
+    margin-top: 30px;
+}
+
+.pt-70{
+    padding-top: 70px;
+}
+
+.pb-70{
+    padding-bottom: 70px;
+}
+
+.pb-30{
+    padding-bottom: 30px;
+}
+
+
+.pt-170{
+    padding-top: 170px;
+}
+
+.mr-30{
+    margin-right: 30px;
+}
+
+.active{
+    font-weight: var(--fw-bold);
+    color: var(--purple-3) !important;
+}
+
+.judul{
+    font-size: 28px;
+    font-weight: var(--fw-extrabold);
+    color: #32318E;
+    text-align: center;
+}
+
+.copywriting{
+    font-size: 20;
+    font-weight: var(--fw-regular);
+    color: var(--purple-3);
+    text-align: center;
+}
+
+.copywriting-2{
+    font-size: 20;
+    font-weight: var(--fw-regular);
+    color: var(--purple-3);
+}
+
+.purple-3{
+    color: #32318E;
+}
+
+.background-purple{
+    background: #9897F4;
+    height: 1080px;
+    width: 100%;
+    border-bottom-right-radius: 150px;
+    border-bottom-left-radius: 150px;
+}
+
+.kartu{
+    background: var(--grey-2);
+    border-radius: 25px;
+    border: 0px;
+    height: auto;
+}
+
+.card-4-biji{
+    filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.25));
+}
+
+.img-feature{
+    max-width: 80%;
+    height: auto;
+}
+
+.mlmx-55{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-reg{
+    font-size: 20px;
+    font-weight:var(--fw-bold);
+    color:#32318E;
+}
+
+.kartu-2{
+    background: var(--grey-2);
+    border-radius: 25px;
+    height: auto;
+    display: inline-flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.kartu-3{
+    background: var(--grey-2);
+    border-radius: 25px;
+    height: auto;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+
+.profile-picture{
+    width: 25%;
+    height: 25%;
+}
+
+.profile-testimoni{
+    font-size: 12px;
+    font-weight: var(--fw-regular);
+}
+
+.bekgron{
+    background: #9897F4;
+    width: auto;
+    height: auto;
+}
+
+.card-brand{
+    width: 227px;
+    height: 110px;
+    border-radius: 15px;
+    background: var(--grey-2);
+    text-align: center;
+}
+
+.logo{
+    height: 50px;
+    margin-top: 30px;
+}
+
+.carousel-wrapper-left{
+    display: flex;
+    height: 110px;
+    animation: moveSlidesToLeft 20s linear infinite;
+    /* transition: transform 10s linear; */
+}
+
+.carousel-left{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    overflow: hidden;
+}
+
+.carousel-wrapper-right{
+    display: flex;
+    height: 110px;
+    animation: moveSlidesToRight 20s linear infinite;
+    /* transition: transform 10s linear; */
+}
+
+.carousel-right{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    height: 110px;
+    overflow: hidden;
+}
+
+@keyframes moveSlidesToLeft {
+    0% {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes moveSlidesToRight {
+    0% {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(100%);
+    }
+}
+
+.card-brand:hover{
+    cursor: pointer;
+}

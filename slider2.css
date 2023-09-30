@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    background: #efefef;
+    display: grid;
+    place-items: center;
+    height: 100%;
+}
+.wrapper{
+    height: 500px;
+    width: 750px;
+    box-shadow: 7px solid rgba(0, 0, 0, 0.5);
+    background: white;
+    border: #efefef;
+    position: relative;
+}
+.wrapper .images{
+    height: 100%;
+    width: 100%;
+    background: url("images/img.jpg");
+}
+.wrapper .images .img-1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: url("images/img.jpg");
+    filter: grayscale(100%);
+}
